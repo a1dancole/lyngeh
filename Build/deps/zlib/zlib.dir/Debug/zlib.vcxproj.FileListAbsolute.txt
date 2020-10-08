@@ -1,2 +1,0 @@
-F:\DungeonCraft\Build\deps\zlib\Debug\zlib.pdb
-F:\DungeonCraft\Build\deps\zlib\zlib.dir\Debug\zlib.pdb

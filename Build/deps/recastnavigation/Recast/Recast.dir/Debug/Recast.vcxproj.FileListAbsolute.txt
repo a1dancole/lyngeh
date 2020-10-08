@@ -1,2 +1,0 @@
-F:\DungeonCraft\Build\deps\recastnavigation\Recast\Debug\Recast.pdb
-F:\DungeonCraft\Build\deps\recastnavigation\Recast\Recast.dir\Debug\Recast.pdb

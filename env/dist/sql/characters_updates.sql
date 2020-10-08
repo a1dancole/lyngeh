@@ -1,0 +1,191 @@
+
+-- 
+-- DB update 2019_01_06_00 -> 2019_02_17_00
+DROP PROCEDURE IF EXISTS `updateDb`;
+DELIMITER //
+CREATE PROCEDURE updateDb ()
+proc:BEGIN DECLARE OK VARCHAR(100) DEFAULT 'FALSE';
+SELECT COUNT(*) INTO @COLEXISTS
+FROM information_schema.COLUMNS
+WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'version_db_characters' AND COLUMN_NAME = '2019_01_06_00';
+IF @COLEXISTS = 0 THEN LEAVE proc; END IF;
+START TRANSACTION;
+ALTER TABLE version_db_characters CHANGE COLUMN 2019_01_06_00 2019_02_17_00 bit;
+SELECT sql_rev INTO OK FROM version_db_characters WHERE sql_rev = 'xxx'; IF OK <> 'FALSE' THEN LEAVE proc; END IF;
+--
+-- START UPDATING QUERIES
+--
+
+-- Placeholder
+
+--
+-- END UPDATING QUERIES
+--
+COMMIT;
+END //
+DELIMITER ;
+CALL updateDb();
+DROP PROCEDURE IF EXISTS `updateDb`;
+-- 
+-- DB update 2019_02_17_00 -> 2019_05_12_00
+DROP PROCEDURE IF EXISTS `updateDb`;
+DELIMITER //
+CREATE PROCEDURE updateDb ()
+proc:BEGIN DECLARE OK VARCHAR(100) DEFAULT 'FALSE';
+SELECT COUNT(*) INTO @COLEXISTS
+FROM information_schema.COLUMNS
+WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'version_db_characters' AND COLUMN_NAME = '2019_02_17_00';
+IF @COLEXISTS = 0 THEN LEAVE proc; END IF;
+START TRANSACTION;
+ALTER TABLE version_db_characters CHANGE COLUMN 2019_02_17_00 2019_05_12_00 bit;
+SELECT sql_rev INTO OK FROM version_db_characters WHERE sql_rev = '1557608218190967100'; IF OK <> 'FALSE' THEN LEAVE proc; END IF;
+--
+-- START UPDATING QUERIES
+--
+
+INSERT INTO `version_db_characters` (`sql_rev`) VALUES ('1557608218190967100');
+
+ALTER TABLE `characters`
+	ADD COLUMN `creation_date` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP AFTER `grantableLevels`;
+
+--
+-- END UPDATING QUERIES
+--
+COMMIT;
+END //
+DELIMITER ;
+CALL updateDb();
+DROP PROCEDURE IF EXISTS `updateDb`;
+-- 
+-- DB update 2019_05_12_00 -> 2019_05_15_00
+DROP PROCEDURE IF EXISTS `updateDb`;
+DELIMITER //
+CREATE PROCEDURE updateDb ()
+proc:BEGIN DECLARE OK VARCHAR(100) DEFAULT 'FALSE';
+SELECT COUNT(*) INTO @COLEXISTS
+FROM information_schema.COLUMNS
+WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'version_db_characters' AND COLUMN_NAME = '2019_05_12_00';
+IF @COLEXISTS = 0 THEN LEAVE proc; END IF;
+START TRANSACTION;
+ALTER TABLE version_db_characters CHANGE COLUMN 2019_05_12_00 2019_05_15_00 bit;
+SELECT sql_rev INTO OK FROM version_db_characters WHERE sql_rev = '1557226918417685700'; IF OK <> 'FALSE' THEN LEAVE proc; END IF;
+--
+-- START UPDATING QUERIES
+--
+
+INSERT INTO `version_db_characters` (`sql_rev`) VALUES ('1557226918417685700');
+
+ALTER TABLE `character_arena_stats`
+MODIFY `guid` int(10) unsigned NOT NULL DEFAULT '0',
+MODIFY `slot` tinyint(3) unsigned NOT NULL DEFAULT '0',
+MODIFY `matchMakerRating` smallint(5) unsigned NOT NULL DEFAULT '0';
+
+--
+-- END UPDATING QUERIES
+--
+COMMIT;
+END //
+DELIMITER ;
+CALL updateDb();
+DROP PROCEDURE IF EXISTS `updateDb`;
+-- 
+-- DB update 2019_05_15_00 -> 2019_11_22_00
+DROP PROCEDURE IF EXISTS `updateDb`;
+DELIMITER //
+CREATE PROCEDURE updateDb ()
+proc:BEGIN DECLARE OK VARCHAR(100) DEFAULT 'FALSE';
+SELECT COUNT(*) INTO @COLEXISTS
+FROM information_schema.COLUMNS
+WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'version_db_characters' AND COLUMN_NAME = '2019_05_15_00';
+IF @COLEXISTS = 0 THEN LEAVE proc; END IF;
+START TRANSACTION;
+ALTER TABLE version_db_characters CHANGE COLUMN 2019_05_15_00 2019_11_22_00 bit;
+SELECT sql_rev INTO OK FROM version_db_characters WHERE sql_rev = '1572030074009407852'; IF OK <> 'FALSE' THEN LEAVE proc; END IF;
+--
+-- START UPDATING QUERIES
+--
+
+INSERT INTO `version_db_characters` (`sql_rev`) VALUES ('1572030074009407852');
+
+UPDATE `worldstates` SET `comment`='NextArenaPointDistributionTime' WHERE `entry`=20001;
+UPDATE `worldstates` SET `comment`='NextWeeklyQuestResetTime' WHERE `entry`=20002;
+UPDATE `worldstates` SET `comment`='NextBGRandomDailyResetTime' WHERE `entry`=20003;
+UPDATE `worldstates` SET `comment`='cleaning_flags' WHERE `entry`=20005;
+UPDATE `worldstates` SET `comment`='NextGuildDailyResetTime' WHERE `entry`=20006;
+UPDATE `worldstates` SET `comment`='NextMonthlyQuestResetTime' WHERE `entry`=20007;
+
+--
+-- END UPDATING QUERIES
+--
+COMMIT;
+END //
+DELIMITER ;
+CALL updateDb();
+DROP PROCEDURE IF EXISTS `updateDb`;
+-- 
+-- DB update 2019_11_22_00 -> 2019_12_09_00
+DROP PROCEDURE IF EXISTS `updateDb`;
+DELIMITER //
+CREATE PROCEDURE updateDb ()
+proc:BEGIN DECLARE OK VARCHAR(100) DEFAULT 'FALSE';
+SELECT COUNT(*) INTO @COLEXISTS
+FROM information_schema.COLUMNS
+WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'version_db_characters' AND COLUMN_NAME = '2019_11_22_00';
+IF @COLEXISTS = 0 THEN LEAVE proc; END IF;
+START TRANSACTION;
+ALTER TABLE version_db_characters CHANGE COLUMN 2019_11_22_00 2019_12_09_00 bit;
+SELECT sql_rev INTO OK FROM version_db_characters WHERE sql_rev = '1575656087867346414'; IF OK <> 'FALSE' THEN LEAVE proc; END IF;
+--
+-- START UPDATING QUERIES
+--
+
+INSERT INTO `version_db_characters` (`sql_rev`) VALUES ('1575656087867346414');
+
+CREATE TABLE IF NOT EXISTS `recovery_item` (
+  `Id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `Guid` int(11) unsigned NOT NULL DEFAULT 0,
+  `ItemEntry` mediumint(8) unsigned NOT NULL DEFAULT 0,
+  `Count` int(11) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`Id`),
+  KEY `idx_guid` (`Guid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- END UPDATING QUERIES
+--
+COMMIT;
+END //
+DELIMITER ;
+CALL updateDb();
+DROP PROCEDURE IF EXISTS `updateDb`;
+-- 
+-- DB update 2019_12_09_00 -> 2020_01_04_00
+DROP PROCEDURE IF EXISTS `updateDb`;
+DELIMITER //
+CREATE PROCEDURE updateDb ()
+proc:BEGIN DECLARE OK VARCHAR(100) DEFAULT 'FALSE';
+SELECT COUNT(*) INTO @COLEXISTS
+FROM information_schema.COLUMNS
+WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'version_db_characters' AND COLUMN_NAME = '2019_12_09_00';
+IF @COLEXISTS = 0 THEN LEAVE proc; END IF;
+START TRANSACTION;
+ALTER TABLE version_db_characters CHANGE COLUMN 2019_12_09_00 2020_01_04_00 bit;
+SELECT sql_rev INTO OK FROM version_db_characters WHERE sql_rev = '1572815191193825836'; IF OK <> 'FALSE' THEN LEAVE proc; END IF;
+--
+-- START UPDATING QUERIES
+--
+
+INSERT INTO `version_db_characters` (`sql_rev`) VALUES ('1572815191193825836');
+
+UPDATE `worldstates` SET `comment`='NextDailyQuestResetTime' WHERE `entry`=20005;
+DELETE FROM `worldstates` WHERE `entry`=20004;
+INSERT INTO `worldstates` (`entry`, `value`, `comment`) VALUES(20004, 0, 'cleaning_flags');
+
+--
+-- END UPDATING QUERIES
+--
+COMMIT;
+END //
+DELIMITER ;
+CALL updateDb();
+DROP PROCEDURE IF EXISTS `updateDb`;

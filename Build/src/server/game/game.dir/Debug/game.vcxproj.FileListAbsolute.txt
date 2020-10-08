@@ -1,2 +1,0 @@
-F:\DungeonCraft\Build\src\server\game\Debug\game.pdb
-F:\DungeonCraft\Build\src\server\game\game.dir\Debug\game.pdb

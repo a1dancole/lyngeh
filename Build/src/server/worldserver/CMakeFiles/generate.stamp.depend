@@ -1,6 +1,0 @@
-# CMake generation dependency list for this directory.
-F:/DungeonCraft/Build/src/server/worldserver/worldserver_CXX_cotire.cmake
-F:/DungeonCraft/Build/src/server/worldserver/worldserver_RC_cotire.cmake
-F:/DungeonCraft/Server/modules/mod-npc-buffer-master/src/cmake/after_ws_install.cmake
-F:/DungeonCraft/Server/modules/mod-pvp-titles-master/src/cmake/after_ws_install.cmake
-F:/DungeonCraft/Server/src/server/worldserver/CMakeLists.txt

@@ -1,5 +1,0 @@
-# CMake generation dependency list for this directory.
-F:/DungeonCraft/Server/deps/openssl/CMakeLists.txt
-F:/DungeonCraft/Server/src/cmake/macros/FindOpenSSL.cmake
-F:/Program Files/CMake/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake
-F:/Program Files/CMake/share/cmake-3.17/Modules/FindPackageMessage.cmake

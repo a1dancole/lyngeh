@@ -1,4 +1,0 @@
-﻿  fatal: not a git repository (or any of the parent directories): .git
-  -- 
-      Could not find a proper repository signature (hash) - you may need to pull tags with git fetch -t
-      Continuing anyway - note that the versionstring will be set to "unknown 1970-01-01 00:00:00 (Archived)"
