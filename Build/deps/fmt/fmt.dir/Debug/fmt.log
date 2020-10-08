@@ -1,0 +1,4 @@
+﻿  Building Custom Rule F:/DungeonCraft/Server/deps/fmt/CMakeLists.txt
+  format.cc
+  posix.cc
+  fmt.vcxproj -> F:\DungeonCraft\Build\deps\fmt\Debug\fmt.lib

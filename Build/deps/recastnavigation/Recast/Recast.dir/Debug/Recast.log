@@ -1,0 +1,13 @@
+﻿  Building Custom Rule F:/DungeonCraft/Server/deps/recastnavigation/Recast/CMakeLists.txt
+  Recast.cpp
+  RecastAlloc.cpp
+  RecastAssert.cpp
+  RecastArea.cpp
+  RecastContour.cpp
+  RecastFilter.cpp
+  RecastLayers.cpp
+  RecastMesh.cpp
+  RecastMeshDetail.cpp
+  RecastRasterization.cpp
+  RecastRegion.cpp
+  Recast.vcxproj -> F:\DungeonCraft\Build\deps\recastnavigation\Recast\Debug\Recast.lib

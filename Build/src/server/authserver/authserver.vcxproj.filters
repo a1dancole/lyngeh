@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="F:\DungeonCraft\Server\src\server\authserver\Main.cpp" />
+    <ClCompile Include="F:\DungeonCraft\Server\src\server\authserver\Authentication\AuthCodes.cpp">
+      <Filter>Authentication</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DungeonCraft\Server\src\server\authserver\Server\AuthSocket.cpp">
+      <Filter>Server</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DungeonCraft\Server\src\server\authserver\Server\TOTP.cpp">
+      <Filter>Server</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DungeonCraft\Server\src\common\Debugging\WheatyExceptionReport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="F:\DungeonCraft\Server\src\server\authserver\resource.h" />
+    <ClInclude Include="F:\DungeonCraft\Server\src\server\authserver\Authentication\AuthCodes.h">
+      <Filter>Authentication</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\DungeonCraft\Server\src\server\authserver\Server\AuthSocket.h">
+      <Filter>Server</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\DungeonCraft\Server\src\server\authserver\Server\RealmAcceptor.h">
+      <Filter>Server</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\DungeonCraft\Server\src\server\authserver\Server\TOTP.h">
+      <Filter>Server</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\DungeonCraft\Server\src\common\Debugging\WheatyExceptionReport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\DungeonCraft\Build\CMakeFiles\85dea095d0d9e594eb780ba9db273117\authserver_CXX_prefix.hxx.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\DungeonCraft\Server\src\server\authserver\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="F:\DungeonCraft\Server\src\server\authserver\authserver.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Authentication">
+      <UniqueIdentifier>{6912D242-3A8C-39B5-9095-49EBEDD07DC2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{9778FB1B-4D8F-3153-8F42-C75BD471009F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{A0E85AC7-3C0D-3B73-AA54-229AA51ACA71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server">
+      <UniqueIdentifier>{A9A442C2-4992-3D9C-93B5-83420EF9BF7A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{E9B7842C-C0EB-3B3B-906A-F7992BA32835}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,2 @@
+F:\DungeonCraft\Build\src\server\scripts\Debug\scripts.pdb
+F:\DungeonCraft\Build\src\server\scripts\scripts.dir\Debug\scripts.pdb

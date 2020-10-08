@@ -1,0 +1,4 @@
+# CMake generation dependency list for this directory.
+F:/DungeonCraft/Build/deps/acelite/ace/ace_CXX_cotire.cmake
+F:/DungeonCraft/Build/deps/acelite/ace/ace_C_cotire.cmake
+F:/DungeonCraft/Server/deps/acelite/ace/CMakeLists.txt

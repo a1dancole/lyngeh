@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="F:\DungeonCraft\Build\CMakeFiles\4f6883543bdcb52624bb595ab7b89581\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{9778FB1B-4D8F-3153-8F42-C75BD471009F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

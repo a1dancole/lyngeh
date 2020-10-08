@@ -1,0 +1,2 @@
+F:\DungeonCraft\Build\deps\g3dlite\Debug\g3dlib.pdb
+F:\DungeonCraft\Build\deps\g3dlite\g3dlib.dir\Debug\g3dlib.pdb

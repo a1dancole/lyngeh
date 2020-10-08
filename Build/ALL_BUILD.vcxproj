@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A7097413-F6FA-3806-88AD-18278EEDD3FE}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\DungeonCraft\Server\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule F:/DungeonCraft/Server/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"F:\Program Files\CMake\bin\cmake.exe" -SF:/DungeonCraft/Server -BF:/DungeonCraft/Build --check-stamp-file F:/DungeonCraft/Build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\DungeonCraft\Build\CMakeFiles\3.17.3\CMakeCCompiler.cmake;F:\DungeonCraft\Build\CMakeFiles\3.17.3\CMakeCXXCompiler.cmake;F:\DungeonCraft\Build\CMakeFiles\3.17.3\CMakeRCCompiler.cmake;F:\DungeonCraft\Build\CMakeFiles\3.17.3\CMakeSystem.cmake;F:\DungeonCraft\Server\conf\config.cmake.dist;F:\DungeonCraft\Server\deps\cotire\CMake\cotire.cmake;F:\DungeonCraft\Server\deps\drassil\cmake-utils\utils.cmake;F:\DungeonCraft\Server\src\cmake\ac_macros.cmake;F:\DungeonCraft\Server\src\cmake\compiler\msvc\settings.cmake;F:\DungeonCraft\Server\src\cmake\genrev.cmake;F:\DungeonCraft\Server\src\cmake\macros\AutoCollect.cmake;F:\DungeonCraft\Server\src\cmake\macros\CheckPlatform.cmake;F:\DungeonCraft\Server\src\cmake\macros\ConfigureBaseTargets.cmake;F:\DungeonCraft\Server\src\cmake\macros\EnsureVersion.cmake;F:\DungeonCraft\Server\src\cmake\macros\FindACE.cmake;F:\DungeonCraft\Server\src\cmake\macros\FindGit.cmake;F:\DungeonCraft\Server\src\cmake\macros\FindMySQL.cmake;F:\DungeonCraft\Server\src\cmake\macros\FindPCHSupport.cmake;F:\DungeonCraft\Server\src\cmake\macros\GroupSources.cmake;F:\DungeonCraft\Server\src\cmake\platform\after_platform.cmake;F:\DungeonCraft\Server\src\cmake\platform\settings.cmake;F:\DungeonCraft\Server\src\cmake\platform\win\settings.cmake;F:\DungeonCraft\Server\src\cmake\showoptions.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CMakeParseArguments.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CheckCXXSourceRuns.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CheckIncludeFiles.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\ProcessorCount.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\DungeonCraft\Build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule F:/DungeonCraft/Server/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"F:\Program Files\CMake\bin\cmake.exe" -SF:/DungeonCraft/Server -BF:/DungeonCraft/Build --check-stamp-file F:/DungeonCraft/Build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\DungeonCraft\Build\CMakeFiles\3.17.3\CMakeCCompiler.cmake;F:\DungeonCraft\Build\CMakeFiles\3.17.3\CMakeCXXCompiler.cmake;F:\DungeonCraft\Build\CMakeFiles\3.17.3\CMakeRCCompiler.cmake;F:\DungeonCraft\Build\CMakeFiles\3.17.3\CMakeSystem.cmake;F:\DungeonCraft\Server\conf\config.cmake.dist;F:\DungeonCraft\Server\deps\cotire\CMake\cotire.cmake;F:\DungeonCraft\Server\deps\drassil\cmake-utils\utils.cmake;F:\DungeonCraft\Server\src\cmake\ac_macros.cmake;F:\DungeonCraft\Server\src\cmake\compiler\msvc\settings.cmake;F:\DungeonCraft\Server\src\cmake\genrev.cmake;F:\DungeonCraft\Server\src\cmake\macros\AutoCollect.cmake;F:\DungeonCraft\Server\src\cmake\macros\CheckPlatform.cmake;F:\DungeonCraft\Server\src\cmake\macros\ConfigureBaseTargets.cmake;F:\DungeonCraft\Server\src\cmake\macros\EnsureVersion.cmake;F:\DungeonCraft\Server\src\cmake\macros\FindACE.cmake;F:\DungeonCraft\Server\src\cmake\macros\FindGit.cmake;F:\DungeonCraft\Server\src\cmake\macros\FindMySQL.cmake;F:\DungeonCraft\Server\src\cmake\macros\FindPCHSupport.cmake;F:\DungeonCraft\Server\src\cmake\macros\GroupSources.cmake;F:\DungeonCraft\Server\src\cmake\platform\after_platform.cmake;F:\DungeonCraft\Server\src\cmake\platform\settings.cmake;F:\DungeonCraft\Server\src\cmake\platform\win\settings.cmake;F:\DungeonCraft\Server\src\cmake\showoptions.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CMakeParseArguments.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CheckCXXSourceRuns.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CheckIncludeFiles.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\ProcessorCount.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\DungeonCraft\Build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule F:/DungeonCraft/Server/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"F:\Program Files\CMake\bin\cmake.exe" -SF:/DungeonCraft/Server -BF:/DungeonCraft/Build --check-stamp-file F:/DungeonCraft/Build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\DungeonCraft\Build\CMakeFiles\3.17.3\CMakeCCompiler.cmake;F:\DungeonCraft\Build\CMakeFiles\3.17.3\CMakeCXXCompiler.cmake;F:\DungeonCraft\Build\CMakeFiles\3.17.3\CMakeRCCompiler.cmake;F:\DungeonCraft\Build\CMakeFiles\3.17.3\CMakeSystem.cmake;F:\DungeonCraft\Server\conf\config.cmake.dist;F:\DungeonCraft\Server\deps\cotire\CMake\cotire.cmake;F:\DungeonCraft\Server\deps\drassil\cmake-utils\utils.cmake;F:\DungeonCraft\Server\src\cmake\ac_macros.cmake;F:\DungeonCraft\Server\src\cmake\compiler\msvc\settings.cmake;F:\DungeonCraft\Server\src\cmake\genrev.cmake;F:\DungeonCraft\Server\src\cmake\macros\AutoCollect.cmake;F:\DungeonCraft\Server\src\cmake\macros\CheckPlatform.cmake;F:\DungeonCraft\Server\src\cmake\macros\ConfigureBaseTargets.cmake;F:\DungeonCraft\Server\src\cmake\macros\EnsureVersion.cmake;F:\DungeonCraft\Server\src\cmake\macros\FindACE.cmake;F:\DungeonCraft\Server\src\cmake\macros\FindGit.cmake;F:\DungeonCraft\Server\src\cmake\macros\FindMySQL.cmake;F:\DungeonCraft\Server\src\cmake\macros\FindPCHSupport.cmake;F:\DungeonCraft\Server\src\cmake\macros\GroupSources.cmake;F:\DungeonCraft\Server\src\cmake\platform\after_platform.cmake;F:\DungeonCraft\Server\src\cmake\platform\settings.cmake;F:\DungeonCraft\Server\src\cmake\platform\win\settings.cmake;F:\DungeonCraft\Server\src\cmake\showoptions.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CMakeParseArguments.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CheckCXXSourceRuns.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CheckIncludeFiles.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\ProcessorCount.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\DungeonCraft\Build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule F:/DungeonCraft/Server/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"F:\Program Files\CMake\bin\cmake.exe" -SF:/DungeonCraft/Server -BF:/DungeonCraft/Build --check-stamp-file F:/DungeonCraft/Build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\DungeonCraft\Build\CMakeFiles\3.17.3\CMakeCCompiler.cmake;F:\DungeonCraft\Build\CMakeFiles\3.17.3\CMakeCXXCompiler.cmake;F:\DungeonCraft\Build\CMakeFiles\3.17.3\CMakeRCCompiler.cmake;F:\DungeonCraft\Build\CMakeFiles\3.17.3\CMakeSystem.cmake;F:\DungeonCraft\Server\conf\config.cmake.dist;F:\DungeonCraft\Server\deps\cotire\CMake\cotire.cmake;F:\DungeonCraft\Server\deps\drassil\cmake-utils\utils.cmake;F:\DungeonCraft\Server\src\cmake\ac_macros.cmake;F:\DungeonCraft\Server\src\cmake\compiler\msvc\settings.cmake;F:\DungeonCraft\Server\src\cmake\genrev.cmake;F:\DungeonCraft\Server\src\cmake\macros\AutoCollect.cmake;F:\DungeonCraft\Server\src\cmake\macros\CheckPlatform.cmake;F:\DungeonCraft\Server\src\cmake\macros\ConfigureBaseTargets.cmake;F:\DungeonCraft\Server\src\cmake\macros\EnsureVersion.cmake;F:\DungeonCraft\Server\src\cmake\macros\FindACE.cmake;F:\DungeonCraft\Server\src\cmake\macros\FindGit.cmake;F:\DungeonCraft\Server\src\cmake\macros\FindMySQL.cmake;F:\DungeonCraft\Server\src\cmake\macros\FindPCHSupport.cmake;F:\DungeonCraft\Server\src\cmake\macros\GroupSources.cmake;F:\DungeonCraft\Server\src\cmake\platform\after_platform.cmake;F:\DungeonCraft\Server\src\cmake\platform\settings.cmake;F:\DungeonCraft\Server\src\cmake\platform\win\settings.cmake;F:\DungeonCraft\Server\src\cmake\showoptions.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CMakeParseArguments.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CheckCXXSourceRuns.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\CheckIncludeFiles.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;F:\Program Files\CMake\share\cmake-3.17\Modules\ProcessorCount.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\DungeonCraft\Build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\DungeonCraft\Build\ZERO_CHECK.vcxproj">
+      <Project>{743AC5F0-75FA-3B23-BF42-CE6421ECAC95}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\DungeonCraft\Build\deps\recastnavigation\Detour\Detour.vcxproj">
+      <Project>{73C61477-8333-30F6-BFF3-3D2C67D21AF3}</Project>
+      <Name>Detour</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\DungeonCraft\Build\deps\recastnavigation\Recast\Recast.vcxproj">
+      <Project>{5654CCCB-3196-35D3-A238-25574FD3FA95}</Project>
+      <Name>Recast</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\DungeonCraft\Build\deps\acelite\ace\ace.vcxproj">
+      <Project>{1DA4F4E3-0A7B-3BB7-A445-792B02B38895}</Project>
+      <Name>ace</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\DungeonCraft\Build\src\server\authserver\authserver.vcxproj">
+      <Project>{DBC9071C-CAAA-3B52-8947-33BC97A78A53}</Project>
+      <Name>authserver</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\DungeonCraft\Build\src\common\common.vcxproj">
+      <Project>{C7328CA8-3EA8-350F-AD29-0708634B2B0F}</Project>
+      <Name>common</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\DungeonCraft\Build\deps\fmt\fmt.vcxproj">
+      <Project>{46BE9967-7B9D-3867-8BFC-12DC8D801A1F}</Project>
+      <Name>fmt</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\DungeonCraft\Build\deps\g3dlite\g3dlib.vcxproj">
+      <Project>{6BECA337-3E4E-3425-99A2-6E880BAB6336}</Project>
+      <Name>g3dlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\DungeonCraft\Build\src\server\game\game.vcxproj">
+      <Project>{F9414386-D53E-33D9-A0BB-187546A1DB36}</Project>
+      <Name>game</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\DungeonCraft\Build\deps\gsoap\gsoap.vcxproj">
+      <Project>{5130AE1A-4837-30AC-8B16-EA3193007BFE}</Project>
+      <Name>gsoap</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\DungeonCraft\Build\src\genrev\revision.h.vcxproj">
+      <Project>{FF03CBC3-4600-31DC-B2E2-21F4F3814C7F}</Project>
+      <Name>revision.h</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\DungeonCraft\Build\src\server\scripts\scripts.vcxproj">
+      <Project>{7E5CCA05-DB90-34E2-8A92-53750E2F48CB}</Project>
+      <Name>scripts</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\DungeonCraft\Build\src\server\shared\shared.vcxproj">
+      <Project>{45657346-6077-31AB-B66A-CB4DB139061F}</Project>
+      <Name>shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\DungeonCraft\Build\src\server\worldserver\worldserver.vcxproj">
+      <Project>{439D5229-D69F-35F2-9035-A2E045EE41DB}</Project>
+      <Name>worldserver</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\DungeonCraft\Build\deps\zlib\zlib.vcxproj">
+      <Project>{4E68D5DC-E59A-34CD-BD7D-D085574C00B7}</Project>
+      <Name>zlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

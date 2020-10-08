@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="F:\DungeonCraft\Server\deps\recastnavigation\Detour\Source\DetourAlloc.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DungeonCraft\Server\deps\recastnavigation\Detour\Source\DetourAssert.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DungeonCraft\Server\deps\recastnavigation\Detour\Source\DetourCommon.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DungeonCraft\Server\deps\recastnavigation\Detour\Source\DetourNavMesh.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DungeonCraft\Server\deps\recastnavigation\Detour\Source\DetourNavMeshBuilder.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DungeonCraft\Server\deps\recastnavigation\Detour\Source\DetourNavMeshQuery.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DungeonCraft\Server\deps\recastnavigation\Detour\Source\DetourNode.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\DungeonCraft\Server\deps\recastnavigation\Detour\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{A8AE305D-3F59-349C-A726-F62B8CCCAAD2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

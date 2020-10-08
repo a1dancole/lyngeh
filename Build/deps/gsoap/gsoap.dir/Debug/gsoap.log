@@ -1,0 +1,5 @@
+﻿  Building Custom Rule F:/DungeonCraft/Server/deps/gsoap/CMakeLists.txt
+  soapC.cpp
+  soapServer.cpp
+  stdsoap2.cpp
+  gsoap.vcxproj -> F:\DungeonCraft\Build\deps\gsoap\Debug\gsoap.lib

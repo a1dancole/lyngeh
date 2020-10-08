@@ -1,0 +1,618 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DBC9071C-CAAA-3B52-8947-33BC97A78A53}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>authserver</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\DungeonCraft\Build\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">authserver.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">authserver</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\DungeonCraft\Build\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">authserver.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">authserver</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\DungeonCraft\Build\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">authserver.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">authserver</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\DungeonCraft\Build\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">authserver.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">authserver</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\DungeonCraft\Server\src\server\authserver;F:\DungeonCraft\Server\src\server\authserver\Authentication;F:\DungeonCraft\Server\src\server\authserver\Server;F:\DungeonCraft\Build\src\server\authserver;F:\DungeonCraft\Server\src\server\shared;F:\DungeonCraft\Server\src\server\shared\Network;F:\DungeonCraft\Server\src\server\shared\Realms;F:\DungeonCraft\Build;F:\DungeonCraft\Server\src\common;F:\DungeonCraft\Server\src\common\Collision;F:\DungeonCraft\Server\src\common\Collision\Management;F:\DungeonCraft\Server\src\common\Collision\Maps;F:\DungeonCraft\Server\src\common\Collision\Models;F:\DungeonCraft\Server\src\common\Configuration;F:\DungeonCraft\Server\src\common\Cryptography;F:\DungeonCraft\Server\src\common\Cryptography\Authentication;F:\DungeonCraft\Server\src\common\DataStores;F:\DungeonCraft\Server\src\common\Database;F:\DungeonCraft\Server\src\common\Database\Implementation;F:\DungeonCraft\Server\src\common\Debugging;F:\DungeonCraft\Server\src\common\Dynamic;F:\DungeonCraft\Server\src\common\Dynamic\LinkedReference;F:\DungeonCraft\Server\src\common\Logging;F:\DungeonCraft\Server\src\common\Packets;F:\DungeonCraft\Server\src\common\Threading;F:\DungeonCraft\Server\src\common\Utilities;F:\DungeonCraft\Server\deps\acelite;F:\DungeonCraft\Server\deps\g3dlite\include;F:\DungeonCraft\Server\deps\zlib;F:\DungeonCraft\Server\deps\recastnavigation\Detour\Include;F:\DungeonCraft\Server\deps\SFMT;F:\DungeonCraft\Server\deps\utf8cpp;F:\Program Files\OpenSSL-Win64\include;F:\DungeonCraft\Server\deps\fmt;C:\Program Files\MySQL\MySQL Server 8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zm500 /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4355;4244;4985;4267;4619</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4263;4264</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CONF_DIR="C:/Program Files (x86)/AzerothCore";SCRIPTS;ENABLE_EXTRAS;ENABLE_VMAP_CHECKS;_WIN64;_BUILD_DIRECTIVE="$(ConfigurationName)";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;__STDC_LIMIT_MACROS;FMT_LOCALE;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CONF_DIR=\"C:/Program Files (x86)/AzerothCore\";SCRIPTS;ENABLE_EXTRAS;ENABLE_VMAP_CHECKS;_WIN64;_BUILD_DIRECTIVE=\"$(ConfigurationName)\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;__STDC_LIMIT_MACROS;FMT_LOCALE;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\DungeonCraft\Server\src\server\authserver;F:\DungeonCraft\Server\src\server\authserver\Authentication;F:\DungeonCraft\Server\src\server\authserver\Server;F:\DungeonCraft\Build\src\server\authserver;F:\DungeonCraft\Server\src\server\shared;F:\DungeonCraft\Server\src\server\shared\Network;F:\DungeonCraft\Server\src\server\shared\Realms;F:\DungeonCraft\Build;F:\DungeonCraft\Server\src\common;F:\DungeonCraft\Server\src\common\Collision;F:\DungeonCraft\Server\src\common\Collision\Management;F:\DungeonCraft\Server\src\common\Collision\Maps;F:\DungeonCraft\Server\src\common\Collision\Models;F:\DungeonCraft\Server\src\common\Configuration;F:\DungeonCraft\Server\src\common\Cryptography;F:\DungeonCraft\Server\src\common\Cryptography\Authentication;F:\DungeonCraft\Server\src\common\DataStores;F:\DungeonCraft\Server\src\common\Database;F:\DungeonCraft\Server\src\common\Database\Implementation;F:\DungeonCraft\Server\src\common\Debugging;F:\DungeonCraft\Server\src\common\Dynamic;F:\DungeonCraft\Server\src\common\Dynamic\LinkedReference;F:\DungeonCraft\Server\src\common\Logging;F:\DungeonCraft\Server\src\common\Packets;F:\DungeonCraft\Server\src\common\Threading;F:\DungeonCraft\Server\src\common\Utilities;F:\DungeonCraft\Server\deps\acelite;F:\DungeonCraft\Server\deps\g3dlite\include;F:\DungeonCraft\Server\deps\zlib;F:\DungeonCraft\Server\deps\recastnavigation\Detour\Include;F:\DungeonCraft\Server\deps\SFMT;F:\DungeonCraft\Server\deps\utf8cpp;F:\Program Files\OpenSSL-Win64\include;F:\DungeonCraft\Server\deps\fmt;C:\Program Files\MySQL\MySQL Server 8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\DungeonCraft\Server\src\server\authserver;F:\DungeonCraft\Server\src\server\authserver\Authentication;F:\DungeonCraft\Server\src\server\authserver\Server;F:\DungeonCraft\Build\src\server\authserver;F:\DungeonCraft\Server\src\server\shared;F:\DungeonCraft\Server\src\server\shared\Network;F:\DungeonCraft\Server\src\server\shared\Realms;F:\DungeonCraft\Build;F:\DungeonCraft\Server\src\common;F:\DungeonCraft\Server\src\common\Collision;F:\DungeonCraft\Server\src\common\Collision\Management;F:\DungeonCraft\Server\src\common\Collision\Maps;F:\DungeonCraft\Server\src\common\Collision\Models;F:\DungeonCraft\Server\src\common\Configuration;F:\DungeonCraft\Server\src\common\Cryptography;F:\DungeonCraft\Server\src\common\Cryptography\Authentication;F:\DungeonCraft\Server\src\common\DataStores;F:\DungeonCraft\Server\src\common\Database;F:\DungeonCraft\Server\src\common\Database\Implementation;F:\DungeonCraft\Server\src\common\Debugging;F:\DungeonCraft\Server\src\common\Dynamic;F:\DungeonCraft\Server\src\common\Dynamic\LinkedReference;F:\DungeonCraft\Server\src\common\Logging;F:\DungeonCraft\Server\src\common\Packets;F:\DungeonCraft\Server\src\common\Threading;F:\DungeonCraft\Server\src\common\Utilities;F:\DungeonCraft\Server\deps\acelite;F:\DungeonCraft\Server\deps\g3dlite\include;F:\DungeonCraft\Server\deps\zlib;F:\DungeonCraft\Server\deps\recastnavigation\Detour\Include;F:\DungeonCraft\Server\deps\SFMT;F:\DungeonCraft\Server\deps\utf8cpp;F:\Program Files\OpenSSL-Win64\include;F:\DungeonCraft\Server\deps\fmt;C:\Program Files\MySQL\MySQL Server 8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"F:\Program Files\CMake\bin\cmake.exe" -E copy F:/DungeonCraft/Server/src/server/authserver/authserver.conf.dist F:/DungeonCraft/Build/bin/$(ConfigurationName)/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\shared\Debug\shared.lib;..\..\common\Debug\common.lib;..\..\common\Debug\common.lib;..\..\..\deps\acelite\ace\Debug\ace.lib;C:\Program Files\MySQL\MySQL Server 8.0\lib\libmysql.lib;..\..\..\deps\g3dlite\Debug\g3dlib.lib;..\..\..\deps\recastnavigation\Detour\Debug\Detour.lib;..\..\..\deps\zlib\Debug\zlib.lib;F:\Program Files\OpenSSL-Win64\lib\VC\libeay32MD.lib;F:\Program Files\OpenSSL-Win64\lib\VC\ssleay32MDd.lib;F:\Program Files\OpenSSL-Win64\lib\VC\libeay32MDd.lib;..\..\..\deps\fmt\Debug\fmt.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/DungeonCraft/Build/src/server/authserver/Debug/authserver.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/DungeonCraft/Build/bin/Debug/authserver.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\DungeonCraft\Server\src\server\authserver;F:\DungeonCraft\Server\src\server\authserver\Authentication;F:\DungeonCraft\Server\src\server\authserver\Server;F:\DungeonCraft\Build\src\server\authserver;F:\DungeonCraft\Server\src\server\shared;F:\DungeonCraft\Server\src\server\shared\Network;F:\DungeonCraft\Server\src\server\shared\Realms;F:\DungeonCraft\Build;F:\DungeonCraft\Server\src\common;F:\DungeonCraft\Server\src\common\Collision;F:\DungeonCraft\Server\src\common\Collision\Management;F:\DungeonCraft\Server\src\common\Collision\Maps;F:\DungeonCraft\Server\src\common\Collision\Models;F:\DungeonCraft\Server\src\common\Configuration;F:\DungeonCraft\Server\src\common\Cryptography;F:\DungeonCraft\Server\src\common\Cryptography\Authentication;F:\DungeonCraft\Server\src\common\DataStores;F:\DungeonCraft\Server\src\common\Database;F:\DungeonCraft\Server\src\common\Database\Implementation;F:\DungeonCraft\Server\src\common\Debugging;F:\DungeonCraft\Server\src\common\Dynamic;F:\DungeonCraft\Server\src\common\Dynamic\LinkedReference;F:\DungeonCraft\Server\src\common\Logging;F:\DungeonCraft\Server\src\common\Packets;F:\DungeonCraft\Server\src\common\Threading;F:\DungeonCraft\Server\src\common\Utilities;F:\DungeonCraft\Server\deps\acelite;F:\DungeonCraft\Server\deps\g3dlite\include;F:\DungeonCraft\Server\deps\zlib;F:\DungeonCraft\Server\deps\recastnavigation\Detour\Include;F:\DungeonCraft\Server\deps\SFMT;F:\DungeonCraft\Server\deps\utf8cpp;F:\Program Files\OpenSSL-Win64\include;F:\DungeonCraft\Server\deps\fmt;C:\Program Files\MySQL\MySQL Server 8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996;4355;4244;4985;4267;4619</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4263;4264</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CONF_DIR="C:/Program Files (x86)/AzerothCore";SCRIPTS;ENABLE_EXTRAS;ENABLE_VMAP_CHECKS;_WIN64;_BUILD_DIRECTIVE="$(ConfigurationName)";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;__STDC_LIMIT_MACROS;FMT_LOCALE;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CONF_DIR=\"C:/Program Files (x86)/AzerothCore\";SCRIPTS;ENABLE_EXTRAS;ENABLE_VMAP_CHECKS;_WIN64;_BUILD_DIRECTIVE=\"$(ConfigurationName)\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;__STDC_LIMIT_MACROS;FMT_LOCALE;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\DungeonCraft\Server\src\server\authserver;F:\DungeonCraft\Server\src\server\authserver\Authentication;F:\DungeonCraft\Server\src\server\authserver\Server;F:\DungeonCraft\Build\src\server\authserver;F:\DungeonCraft\Server\src\server\shared;F:\DungeonCraft\Server\src\server\shared\Network;F:\DungeonCraft\Server\src\server\shared\Realms;F:\DungeonCraft\Build;F:\DungeonCraft\Server\src\common;F:\DungeonCraft\Server\src\common\Collision;F:\DungeonCraft\Server\src\common\Collision\Management;F:\DungeonCraft\Server\src\common\Collision\Maps;F:\DungeonCraft\Server\src\common\Collision\Models;F:\DungeonCraft\Server\src\common\Configuration;F:\DungeonCraft\Server\src\common\Cryptography;F:\DungeonCraft\Server\src\common\Cryptography\Authentication;F:\DungeonCraft\Server\src\common\DataStores;F:\DungeonCraft\Server\src\common\Database;F:\DungeonCraft\Server\src\common\Database\Implementation;F:\DungeonCraft\Server\src\common\Debugging;F:\DungeonCraft\Server\src\common\Dynamic;F:\DungeonCraft\Server\src\common\Dynamic\LinkedReference;F:\DungeonCraft\Server\src\common\Logging;F:\DungeonCraft\Server\src\common\Packets;F:\DungeonCraft\Server\src\common\Threading;F:\DungeonCraft\Server\src\common\Utilities;F:\DungeonCraft\Server\deps\acelite;F:\DungeonCraft\Server\deps\g3dlite\include;F:\DungeonCraft\Server\deps\zlib;F:\DungeonCraft\Server\deps\recastnavigation\Detour\Include;F:\DungeonCraft\Server\deps\SFMT;F:\DungeonCraft\Server\deps\utf8cpp;F:\Program Files\OpenSSL-Win64\include;F:\DungeonCraft\Server\deps\fmt;C:\Program Files\MySQL\MySQL Server 8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\DungeonCraft\Server\src\server\authserver;F:\DungeonCraft\Server\src\server\authserver\Authentication;F:\DungeonCraft\Server\src\server\authserver\Server;F:\DungeonCraft\Build\src\server\authserver;F:\DungeonCraft\Server\src\server\shared;F:\DungeonCraft\Server\src\server\shared\Network;F:\DungeonCraft\Server\src\server\shared\Realms;F:\DungeonCraft\Build;F:\DungeonCraft\Server\src\common;F:\DungeonCraft\Server\src\common\Collision;F:\DungeonCraft\Server\src\common\Collision\Management;F:\DungeonCraft\Server\src\common\Collision\Maps;F:\DungeonCraft\Server\src\common\Collision\Models;F:\DungeonCraft\Server\src\common\Configuration;F:\DungeonCraft\Server\src\common\Cryptography;F:\DungeonCraft\Server\src\common\Cryptography\Authentication;F:\DungeonCraft\Server\src\common\DataStores;F:\DungeonCraft\Server\src\common\Database;F:\DungeonCraft\Server\src\common\Database\Implementation;F:\DungeonCraft\Server\src\common\Debugging;F:\DungeonCraft\Server\src\common\Dynamic;F:\DungeonCraft\Server\src\common\Dynamic\LinkedReference;F:\DungeonCraft\Server\src\common\Logging;F:\DungeonCraft\Server\src\common\Packets;F:\DungeonCraft\Server\src\common\Threading;F:\DungeonCraft\Server\src\common\Utilities;F:\DungeonCraft\Server\deps\acelite;F:\DungeonCraft\Server\deps\g3dlite\include;F:\DungeonCraft\Server\deps\zlib;F:\DungeonCraft\Server\deps\recastnavigation\Detour\Include;F:\DungeonCraft\Server\deps\SFMT;F:\DungeonCraft\Server\deps\utf8cpp;F:\Program Files\OpenSSL-Win64\include;F:\DungeonCraft\Server\deps\fmt;C:\Program Files\MySQL\MySQL Server 8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"F:\Program Files\CMake\bin\cmake.exe" -E copy F:/DungeonCraft/Server/src/server/authserver/authserver.conf.dist F:/DungeonCraft/Build/bin/$(ConfigurationName)/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\shared\Release\shared.lib;..\..\common\Release\common.lib;..\..\common\Release\common.lib;..\..\..\deps\acelite\ace\Release\ace.lib;C:\Program Files\MySQL\MySQL Server 8.0\lib\libmysql.lib;..\..\..\deps\g3dlite\Release\g3dlib.lib;..\..\..\deps\recastnavigation\Detour\Release\Detour.lib;..\..\..\deps\zlib\Release\zlib.lib;F:\Program Files\OpenSSL-Win64\lib\VC\ssleay32MD.lib;F:\Program Files\OpenSSL-Win64\lib\VC\libeay32MD.lib;F:\Program Files\OpenSSL-Win64\lib\VC\libeay32MDd.lib;..\..\..\deps\fmt\Release\fmt.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/DungeonCraft/Build/src/server/authserver/Release/authserver.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/DungeonCraft/Build/bin/Release/authserver.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\DungeonCraft\Server\src\server\authserver;F:\DungeonCraft\Server\src\server\authserver\Authentication;F:\DungeonCraft\Server\src\server\authserver\Server;F:\DungeonCraft\Build\src\server\authserver;F:\DungeonCraft\Server\src\server\shared;F:\DungeonCraft\Server\src\server\shared\Network;F:\DungeonCraft\Server\src\server\shared\Realms;F:\DungeonCraft\Build;F:\DungeonCraft\Server\src\common;F:\DungeonCraft\Server\src\common\Collision;F:\DungeonCraft\Server\src\common\Collision\Management;F:\DungeonCraft\Server\src\common\Collision\Maps;F:\DungeonCraft\Server\src\common\Collision\Models;F:\DungeonCraft\Server\src\common\Configuration;F:\DungeonCraft\Server\src\common\Cryptography;F:\DungeonCraft\Server\src\common\Cryptography\Authentication;F:\DungeonCraft\Server\src\common\DataStores;F:\DungeonCraft\Server\src\common\Database;F:\DungeonCraft\Server\src\common\Database\Implementation;F:\DungeonCraft\Server\src\common\Debugging;F:\DungeonCraft\Server\src\common\Dynamic;F:\DungeonCraft\Server\src\common\Dynamic\LinkedReference;F:\DungeonCraft\Server\src\common\Logging;F:\DungeonCraft\Server\src\common\Packets;F:\DungeonCraft\Server\src\common\Threading;F:\DungeonCraft\Server\src\common\Utilities;F:\DungeonCraft\Server\deps\acelite;F:\DungeonCraft\Server\deps\g3dlite\include;F:\DungeonCraft\Server\deps\zlib;F:\DungeonCraft\Server\deps\recastnavigation\Detour\Include;F:\DungeonCraft\Server\deps\SFMT;F:\DungeonCraft\Server\deps\utf8cpp;F:\Program Files\OpenSSL-Win64\include;F:\DungeonCraft\Server\deps\fmt;C:\Program Files\MySQL\MySQL Server 8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996;4355;4244;4985;4267;4619</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4263;4264</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CONF_DIR="C:/Program Files (x86)/AzerothCore";SCRIPTS;ENABLE_EXTRAS;ENABLE_VMAP_CHECKS;_WIN64;_BUILD_DIRECTIVE="$(ConfigurationName)";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;__STDC_LIMIT_MACROS;FMT_LOCALE;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CONF_DIR=\"C:/Program Files (x86)/AzerothCore\";SCRIPTS;ENABLE_EXTRAS;ENABLE_VMAP_CHECKS;_WIN64;_BUILD_DIRECTIVE=\"$(ConfigurationName)\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;__STDC_LIMIT_MACROS;FMT_LOCALE;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\DungeonCraft\Server\src\server\authserver;F:\DungeonCraft\Server\src\server\authserver\Authentication;F:\DungeonCraft\Server\src\server\authserver\Server;F:\DungeonCraft\Build\src\server\authserver;F:\DungeonCraft\Server\src\server\shared;F:\DungeonCraft\Server\src\server\shared\Network;F:\DungeonCraft\Server\src\server\shared\Realms;F:\DungeonCraft\Build;F:\DungeonCraft\Server\src\common;F:\DungeonCraft\Server\src\common\Collision;F:\DungeonCraft\Server\src\common\Collision\Management;F:\DungeonCraft\Server\src\common\Collision\Maps;F:\DungeonCraft\Server\src\common\Collision\Models;F:\DungeonCraft\Server\src\common\Configuration;F:\DungeonCraft\Server\src\common\Cryptography;F:\DungeonCraft\Server\src\common\Cryptography\Authentication;F:\DungeonCraft\Server\src\common\DataStores;F:\DungeonCraft\Server\src\common\Database;F:\DungeonCraft\Server\src\common\Database\Implementation;F:\DungeonCraft\Server\src\common\Debugging;F:\DungeonCraft\Server\src\common\Dynamic;F:\DungeonCraft\Server\src\common\Dynamic\LinkedReference;F:\DungeonCraft\Server\src\common\Logging;F:\DungeonCraft\Server\src\common\Packets;F:\DungeonCraft\Server\src\common\Threading;F:\DungeonCraft\Server\src\common\Utilities;F:\DungeonCraft\Server\deps\acelite;F:\DungeonCraft\Server\deps\g3dlite\include;F:\DungeonCraft\Server\deps\zlib;F:\DungeonCraft\Server\deps\recastnavigation\Detour\Include;F:\DungeonCraft\Server\deps\SFMT;F:\DungeonCraft\Server\deps\utf8cpp;F:\Program Files\OpenSSL-Win64\include;F:\DungeonCraft\Server\deps\fmt;C:\Program Files\MySQL\MySQL Server 8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\DungeonCraft\Server\src\server\authserver;F:\DungeonCraft\Server\src\server\authserver\Authentication;F:\DungeonCraft\Server\src\server\authserver\Server;F:\DungeonCraft\Build\src\server\authserver;F:\DungeonCraft\Server\src\server\shared;F:\DungeonCraft\Server\src\server\shared\Network;F:\DungeonCraft\Server\src\server\shared\Realms;F:\DungeonCraft\Build;F:\DungeonCraft\Server\src\common;F:\DungeonCraft\Server\src\common\Collision;F:\DungeonCraft\Server\src\common\Collision\Management;F:\DungeonCraft\Server\src\common\Collision\Maps;F:\DungeonCraft\Server\src\common\Collision\Models;F:\DungeonCraft\Server\src\common\Configuration;F:\DungeonCraft\Server\src\common\Cryptography;F:\DungeonCraft\Server\src\common\Cryptography\Authentication;F:\DungeonCraft\Server\src\common\DataStores;F:\DungeonCraft\Server\src\common\Database;F:\DungeonCraft\Server\src\common\Database\Implementation;F:\DungeonCraft\Server\src\common\Debugging;F:\DungeonCraft\Server\src\common\Dynamic;F:\DungeonCraft\Server\src\common\Dynamic\LinkedReference;F:\DungeonCraft\Server\src\common\Logging;F:\DungeonCraft\Server\src\common\Packets;F:\DungeonCraft\Server\src\common\Threading;F:\DungeonCraft\Server\src\common\Utilities;F:\DungeonCraft\Server\deps\acelite;F:\DungeonCraft\Server\deps\g3dlite\include;F:\DungeonCraft\Server\deps\zlib;F:\DungeonCraft\Server\deps\recastnavigation\Detour\Include;F:\DungeonCraft\Server\deps\SFMT;F:\DungeonCraft\Server\deps\utf8cpp;F:\Program Files\OpenSSL-Win64\include;F:\DungeonCraft\Server\deps\fmt;C:\Program Files\MySQL\MySQL Server 8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"F:\Program Files\CMake\bin\cmake.exe" -E copy F:/DungeonCraft/Server/src/server/authserver/authserver.conf.dist F:/DungeonCraft/Build/bin/$(ConfigurationName)/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\shared\MinSizeRel\shared.lib;..\..\common\MinSizeRel\common.lib;..\..\common\MinSizeRel\common.lib;..\..\..\deps\acelite\ace\MinSizeRel\ace.lib;C:\Program Files\MySQL\MySQL Server 8.0\lib\libmysql.lib;..\..\..\deps\g3dlite\MinSizeRel\g3dlib.lib;..\..\..\deps\recastnavigation\Detour\MinSizeRel\Detour.lib;..\..\..\deps\zlib\MinSizeRel\zlib.lib;F:\Program Files\OpenSSL-Win64\lib\VC\ssleay32MD.lib;F:\Program Files\OpenSSL-Win64\lib\VC\libeay32MD.lib;F:\Program Files\OpenSSL-Win64\lib\VC\libeay32MDd.lib;..\..\..\deps\fmt\MinSizeRel\fmt.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/DungeonCraft/Build/src/server/authserver/MinSizeRel/authserver.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/DungeonCraft/Build/bin/MinSizeRel/authserver.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\DungeonCraft\Server\src\server\authserver;F:\DungeonCraft\Server\src\server\authserver\Authentication;F:\DungeonCraft\Server\src\server\authserver\Server;F:\DungeonCraft\Build\src\server\authserver;F:\DungeonCraft\Server\src\server\shared;F:\DungeonCraft\Server\src\server\shared\Network;F:\DungeonCraft\Server\src\server\shared\Realms;F:\DungeonCraft\Build;F:\DungeonCraft\Server\src\common;F:\DungeonCraft\Server\src\common\Collision;F:\DungeonCraft\Server\src\common\Collision\Management;F:\DungeonCraft\Server\src\common\Collision\Maps;F:\DungeonCraft\Server\src\common\Collision\Models;F:\DungeonCraft\Server\src\common\Configuration;F:\DungeonCraft\Server\src\common\Cryptography;F:\DungeonCraft\Server\src\common\Cryptography\Authentication;F:\DungeonCraft\Server\src\common\DataStores;F:\DungeonCraft\Server\src\common\Database;F:\DungeonCraft\Server\src\common\Database\Implementation;F:\DungeonCraft\Server\src\common\Debugging;F:\DungeonCraft\Server\src\common\Dynamic;F:\DungeonCraft\Server\src\common\Dynamic\LinkedReference;F:\DungeonCraft\Server\src\common\Logging;F:\DungeonCraft\Server\src\common\Packets;F:\DungeonCraft\Server\src\common\Threading;F:\DungeonCraft\Server\src\common\Utilities;F:\DungeonCraft\Server\deps\acelite;F:\DungeonCraft\Server\deps\g3dlite\include;F:\DungeonCraft\Server\deps\zlib;F:\DungeonCraft\Server\deps\recastnavigation\Detour\Include;F:\DungeonCraft\Server\deps\SFMT;F:\DungeonCraft\Server\deps\utf8cpp;F:\Program Files\OpenSSL-Win64\include;F:\DungeonCraft\Server\deps\fmt;C:\Program Files\MySQL\MySQL Server 8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4355;4244;4985;4267;4619</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4263;4264</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CONF_DIR="C:/Program Files (x86)/AzerothCore";SCRIPTS;ENABLE_EXTRAS;ENABLE_VMAP_CHECKS;_WIN64;_BUILD_DIRECTIVE="$(ConfigurationName)";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;__STDC_LIMIT_MACROS;FMT_LOCALE;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CONF_DIR=\"C:/Program Files (x86)/AzerothCore\";SCRIPTS;ENABLE_EXTRAS;ENABLE_VMAP_CHECKS;_WIN64;_BUILD_DIRECTIVE=\"$(ConfigurationName)\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;__STDC_LIMIT_MACROS;FMT_LOCALE;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\DungeonCraft\Server\src\server\authserver;F:\DungeonCraft\Server\src\server\authserver\Authentication;F:\DungeonCraft\Server\src\server\authserver\Server;F:\DungeonCraft\Build\src\server\authserver;F:\DungeonCraft\Server\src\server\shared;F:\DungeonCraft\Server\src\server\shared\Network;F:\DungeonCraft\Server\src\server\shared\Realms;F:\DungeonCraft\Build;F:\DungeonCraft\Server\src\common;F:\DungeonCraft\Server\src\common\Collision;F:\DungeonCraft\Server\src\common\Collision\Management;F:\DungeonCraft\Server\src\common\Collision\Maps;F:\DungeonCraft\Server\src\common\Collision\Models;F:\DungeonCraft\Server\src\common\Configuration;F:\DungeonCraft\Server\src\common\Cryptography;F:\DungeonCraft\Server\src\common\Cryptography\Authentication;F:\DungeonCraft\Server\src\common\DataStores;F:\DungeonCraft\Server\src\common\Database;F:\DungeonCraft\Server\src\common\Database\Implementation;F:\DungeonCraft\Server\src\common\Debugging;F:\DungeonCraft\Server\src\common\Dynamic;F:\DungeonCraft\Server\src\common\Dynamic\LinkedReference;F:\DungeonCraft\Server\src\common\Logging;F:\DungeonCraft\Server\src\common\Packets;F:\DungeonCraft\Server\src\common\Threading;F:\DungeonCraft\Server\src\common\Utilities;F:\DungeonCraft\Server\deps\acelite;F:\DungeonCraft\Server\deps\g3dlite\include;F:\DungeonCraft\Server\deps\zlib;F:\DungeonCraft\Server\deps\recastnavigation\Detour\Include;F:\DungeonCraft\Server\deps\SFMT;F:\DungeonCraft\Server\deps\utf8cpp;F:\Program Files\OpenSSL-Win64\include;F:\DungeonCraft\Server\deps\fmt;C:\Program Files\MySQL\MySQL Server 8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\DungeonCraft\Server\src\server\authserver;F:\DungeonCraft\Server\src\server\authserver\Authentication;F:\DungeonCraft\Server\src\server\authserver\Server;F:\DungeonCraft\Build\src\server\authserver;F:\DungeonCraft\Server\src\server\shared;F:\DungeonCraft\Server\src\server\shared\Network;F:\DungeonCraft\Server\src\server\shared\Realms;F:\DungeonCraft\Build;F:\DungeonCraft\Server\src\common;F:\DungeonCraft\Server\src\common\Collision;F:\DungeonCraft\Server\src\common\Collision\Management;F:\DungeonCraft\Server\src\common\Collision\Maps;F:\DungeonCraft\Server\src\common\Collision\Models;F:\DungeonCraft\Server\src\common\Configuration;F:\DungeonCraft\Server\src\common\Cryptography;F:\DungeonCraft\Server\src\common\Cryptography\Authentication;F:\DungeonCraft\Server\src\common\DataStores;F:\DungeonCraft\Server\src\common\Database;F:\DungeonCraft\Server\src\common\Database\Implementation;F:\DungeonCraft\Server\src\common\Debugging;F:\DungeonCraft\Server\src\common\Dynamic;F:\DungeonCraft\Server\src\common\Dynamic\LinkedReference;F:\DungeonCraft\Server\src\common\Logging;F:\DungeonCraft\Server\src\common\Packets;F:\DungeonCraft\Server\src\common\Threading;F:\DungeonCraft\Server\src\common\Utilities;F:\DungeonCraft\Server\deps\acelite;F:\DungeonCraft\Server\deps\g3dlite\include;F:\DungeonCraft\Server\deps\zlib;F:\DungeonCraft\Server\deps\recastnavigation\Detour\Include;F:\DungeonCraft\Server\deps\SFMT;F:\DungeonCraft\Server\deps\utf8cpp;F:\Program Files\OpenSSL-Win64\include;F:\DungeonCraft\Server\deps\fmt;C:\Program Files\MySQL\MySQL Server 8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"F:\Program Files\CMake\bin\cmake.exe" -E copy F:/DungeonCraft/Server/src/server/authserver/authserver.conf.dist F:/DungeonCraft/Build/bin/$(ConfigurationName)/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\shared\RelWithDebInfo\shared.lib;..\..\common\RelWithDebInfo\common.lib;..\..\common\RelWithDebInfo\common.lib;..\..\..\deps\acelite\ace\RelWithDebInfo\ace.lib;C:\Program Files\MySQL\MySQL Server 8.0\lib\libmysql.lib;..\..\..\deps\g3dlite\RelWithDebInfo\g3dlib.lib;..\..\..\deps\recastnavigation\Detour\RelWithDebInfo\Detour.lib;..\..\..\deps\zlib\RelWithDebInfo\zlib.lib;F:\Program Files\OpenSSL-Win64\lib\VC\ssleay32MD.lib;F:\Program Files\OpenSSL-Win64\lib\VC\libeay32MD.lib;F:\Program Files\OpenSSL-Win64\lib\VC\libeay32MDd.lib;..\..\..\deps\fmt\RelWithDebInfo\fmt.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/DungeonCraft/Build/src/server/authserver/RelWithDebInfo/authserver.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/DungeonCraft/Build/bin/RelWithDebInfo/authserver.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\DungeonCraft\Build\CMakeFiles\85dea095d0d9e594eb780ba9db273117\authserver_CXX_prefix.hxx.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating CXX prefix header F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd F:\DungeonCraft\Build
+if %errorlevel% neq 0 goto :cmEnd
+F:
+if %errorlevel% neq 0 goto :cmEnd
+"F:\Program Files\CMake\bin\cmake.exe" -DCOTIRE_BUILD_TYPE:STRING=Debug -P F:/DungeonCraft/Server/deps/cotire/CMake/cotire.cmake combine F:/DungeonCraft/Build/src/server/authserver/authserver_CXX_Debug_cotire.cmake F:/DungeonCraft/Build/src/server/authserver/$(Configuration)/cotire/authserver_CXX_prefix.hxx F:/DungeonCraft/Server/src/server/authserver/PrecompiledHeaders/authPCH.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\DungeonCraft\Server\src\server\authserver\PrecompiledHeaders\authPCH.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating CXX prefix header F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd F:\DungeonCraft\Build
+if %errorlevel% neq 0 goto :cmEnd
+F:
+if %errorlevel% neq 0 goto :cmEnd
+"F:\Program Files\CMake\bin\cmake.exe" -DCOTIRE_BUILD_TYPE:STRING=Release -P F:/DungeonCraft/Server/deps/cotire/CMake/cotire.cmake combine F:/DungeonCraft/Build/src/server/authserver/authserver_CXX_Release_cotire.cmake F:/DungeonCraft/Build/src/server/authserver/$(Configuration)/cotire/authserver_CXX_prefix.hxx F:/DungeonCraft/Server/src/server/authserver/PrecompiledHeaders/authPCH.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\DungeonCraft\Server\src\server\authserver\PrecompiledHeaders\authPCH.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating CXX prefix header F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd F:\DungeonCraft\Build
+if %errorlevel% neq 0 goto :cmEnd
+F:
+if %errorlevel% neq 0 goto :cmEnd
+"F:\Program Files\CMake\bin\cmake.exe" -DCOTIRE_BUILD_TYPE:STRING=MinSizeRel -P F:/DungeonCraft/Server/deps/cotire/CMake/cotire.cmake combine F:/DungeonCraft/Build/src/server/authserver/authserver_CXX_MinSizeRel_cotire.cmake F:/DungeonCraft/Build/src/server/authserver/$(Configuration)/cotire/authserver_CXX_prefix.hxx F:/DungeonCraft/Server/src/server/authserver/PrecompiledHeaders/authPCH.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\DungeonCraft\Server\src\server\authserver\PrecompiledHeaders\authPCH.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating CXX prefix header F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd F:\DungeonCraft\Build
+if %errorlevel% neq 0 goto :cmEnd
+F:
+if %errorlevel% neq 0 goto :cmEnd
+"F:\Program Files\CMake\bin\cmake.exe" -DCOTIRE_BUILD_TYPE:STRING=RelWithDebInfo -P F:/DungeonCraft/Server/deps/cotire/CMake/cotire.cmake combine F:/DungeonCraft/Build/src/server/authserver/authserver_CXX_RelWithDebInfo_cotire.cmake F:/DungeonCraft/Build/src/server/authserver/$(Configuration)/cotire/authserver_CXX_prefix.hxx F:/DungeonCraft/Server/src/server/authserver/PrecompiledHeaders/authPCH.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\DungeonCraft\Server\src\server\authserver\PrecompiledHeaders\authPCH.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\DungeonCraft\Server\src\server\authserver\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule F:/DungeonCraft/Server/src/server/authserver/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"F:\Program Files\CMake\bin\cmake.exe" -SF:/DungeonCraft/Server -BF:/DungeonCraft/Build --check-stamp-file F:/DungeonCraft/Build/src/server/authserver/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\DungeonCraft\Build\src\server\authserver\authserver_CXX_cotire.cmake;F:\DungeonCraft\Build\src\server\authserver\authserver_RC_cotire.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\DungeonCraft\Build\src\server\authserver\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule F:/DungeonCraft/Server/src/server/authserver/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"F:\Program Files\CMake\bin\cmake.exe" -SF:/DungeonCraft/Server -BF:/DungeonCraft/Build --check-stamp-file F:/DungeonCraft/Build/src/server/authserver/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\DungeonCraft\Build\src\server\authserver\authserver_CXX_cotire.cmake;F:\DungeonCraft\Build\src\server\authserver\authserver_RC_cotire.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\DungeonCraft\Build\src\server\authserver\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule F:/DungeonCraft/Server/src/server/authserver/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"F:\Program Files\CMake\bin\cmake.exe" -SF:/DungeonCraft/Server -BF:/DungeonCraft/Build --check-stamp-file F:/DungeonCraft/Build/src/server/authserver/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\DungeonCraft\Build\src\server\authserver\authserver_CXX_cotire.cmake;F:\DungeonCraft\Build\src\server\authserver\authserver_RC_cotire.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\DungeonCraft\Build\src\server\authserver\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule F:/DungeonCraft/Server/src/server/authserver/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"F:\Program Files\CMake\bin\cmake.exe" -SF:/DungeonCraft/Server -BF:/DungeonCraft/Build --check-stamp-file F:/DungeonCraft/Build/src/server/authserver/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\DungeonCraft\Build\src\server\authserver\authserver_CXX_cotire.cmake;F:\DungeonCraft\Build\src\server\authserver\authserver_RC_cotire.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\DungeonCraft\Build\src\server\authserver\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="F:\DungeonCraft\Server\src\server\authserver\Main.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClInclude Include="F:\DungeonCraft\Server\src\server\authserver\resource.h" />
+    <ClCompile Include="F:\DungeonCraft\Server\src\server\authserver\Authentication\AuthCodes.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClInclude Include="F:\DungeonCraft\Server\src\server\authserver\Authentication\AuthCodes.h" />
+    <ClCompile Include="F:\DungeonCraft\Server\src\server\authserver\Server\AuthSocket.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClInclude Include="F:\DungeonCraft\Server\src\server\authserver\Server\AuthSocket.h" />
+    <ClInclude Include="F:\DungeonCraft\Server\src\server\authserver\Server\RealmAcceptor.h" />
+    <ClCompile Include="F:\DungeonCraft\Server\src\server\authserver\Server\TOTP.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClInclude Include="F:\DungeonCraft\Server\src\server\authserver\Server\TOTP.h" />
+    <ClCompile Include="F:\DungeonCraft\Server\src\common\Debugging\WheatyExceptionReport.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\DungeonCraft\Build\src\server\authserver\$(Configuration)\cotire\authserver_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClInclude Include="F:\DungeonCraft\Server\src\common\Debugging\WheatyExceptionReport.h" />
+    <ResourceCompile Include="F:\DungeonCraft\Server\src\server\authserver\authserver.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\DungeonCraft\Build\ZERO_CHECK.vcxproj">
+      <Project>{743AC5F0-75FA-3B23-BF42-CE6421ECAC95}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\DungeonCraft\Build\deps\recastnavigation\Detour\Detour.vcxproj">
+      <Project>{73C61477-8333-30F6-BFF3-3D2C67D21AF3}</Project>
+      <Name>Detour</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\DungeonCraft\Build\deps\acelite\ace\ace.vcxproj">
+      <Project>{1DA4F4E3-0A7B-3BB7-A445-792B02B38895}</Project>
+      <Name>ace</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\DungeonCraft\Build\src\common\common.vcxproj">
+      <Project>{C7328CA8-3EA8-350F-AD29-0708634B2B0F}</Project>
+      <Name>common</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\DungeonCraft\Build\deps\fmt\fmt.vcxproj">
+      <Project>{46BE9967-7B9D-3867-8BFC-12DC8D801A1F}</Project>
+      <Name>fmt</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\DungeonCraft\Build\deps\g3dlite\g3dlib.vcxproj">
+      <Project>{6BECA337-3E4E-3425-99A2-6E880BAB6336}</Project>
+      <Name>g3dlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\DungeonCraft\Build\src\genrev\revision.h.vcxproj">
+      <Project>{FF03CBC3-4600-31DC-B2E2-21F4F3814C7F}</Project>
+      <Name>revision.h</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\DungeonCraft\Build\src\server\shared\shared.vcxproj">
+      <Project>{45657346-6077-31AB-B66A-CB4DB139061F}</Project>
+      <Name>shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\DungeonCraft\Build\deps\zlib\zlib.vcxproj">
+      <Project>{4E68D5DC-E59A-34CD-BD7D-D085574C00B7}</Project>
+      <Name>zlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

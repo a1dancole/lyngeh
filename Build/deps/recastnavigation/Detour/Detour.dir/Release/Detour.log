@@ -1,0 +1,9 @@
+﻿  Building Custom Rule F:/DungeonCraft/Server/deps/recastnavigation/Detour/CMakeLists.txt
+  DetourAlloc.cpp
+  DetourAssert.cpp
+  DetourCommon.cpp
+  DetourNavMesh.cpp
+  DetourNavMeshBuilder.cpp
+  DetourNavMeshQuery.cpp
+  DetourNode.cpp
+  Detour.vcxproj -> F:\DungeonCraft\Build\deps\recastnavigation\Detour\Release\Detour.lib

@@ -1,0 +1,24 @@
+^F:\DUNGEONCRAFT\BUILD\CMAKEFILES\E82296DB71928FE6102A9EE9983C0868\REVISION.H.RULE
+setlocal
+cd F:\DungeonCraft\Server
+if %errorlevel% neq 0 goto :cmEnd
+F:
+if %errorlevel% neq 0 goto :cmEnd
+"F:\Program Files\CMake\bin\cmake.exe" -DBUILDDIR=F:/DungeonCraft/Build -P F:/DungeonCraft/Server/src/cmake/genrev.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\DUNGEONCRAFT\SERVER\SRC\GENREV\CMAKELISTS.TXT
+setlocal
+"F:\Program Files\CMake\bin\cmake.exe" -SF:/DungeonCraft/Server -BF:/DungeonCraft/Build --check-stamp-file F:/DungeonCraft/Build/src/genrev/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

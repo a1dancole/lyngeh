@@ -1,0 +1,4 @@
+﻿  Building Custom Rule F:/DungeonCraft/Server/src/server/shared/CMakeLists.txt
+  RealmSocket.cpp
+  RealmList.cpp
+  shared.vcxproj -> F:\DungeonCraft\Build\src\server\shared\Release\shared.lib

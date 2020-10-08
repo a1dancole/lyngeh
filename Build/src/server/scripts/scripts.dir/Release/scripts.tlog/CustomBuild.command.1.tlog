@@ -1,0 +1,24 @@
+^F:\DUNGEONCRAFT\BUILD\CMAKEFILES\FC5A9859FB5CA91124DAE406D5D0C65F\SCRIPTS_CXX_PREFIX.HXX.RULE
+setlocal
+cd F:\DungeonCraft\Build
+if %errorlevel% neq 0 goto :cmEnd
+F:
+if %errorlevel% neq 0 goto :cmEnd
+"F:\Program Files\CMake\bin\cmake.exe" -DCOTIRE_BUILD_TYPE:STRING=Release -P F:/DungeonCraft/Server/deps/cotire/CMake/cotire.cmake combine F:/DungeonCraft/Build/src/server/scripts/scripts_CXX_Release_cotire.cmake F:/DungeonCraft/Build/src/server/scripts/Release/cotire/scripts_CXX_prefix.hxx F:/DungeonCraft/Server/src/server/scripts/PrecompiledHeaders/ScriptPCH.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\DUNGEONCRAFT\SERVER\SRC\SERVER\SCRIPTS\CMAKELISTS.TXT
+setlocal
+"F:\Program Files\CMake\bin\cmake.exe" -SF:/DungeonCraft/Server -BF:/DungeonCraft/Build --check-stamp-file F:/DungeonCraft/Build/src/server/scripts/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

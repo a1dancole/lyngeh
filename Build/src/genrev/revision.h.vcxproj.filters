@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="F:\DungeonCraft\Build\CMakeFiles\e82296db71928fe6102a9ee9983c0868\revision.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\DungeonCraft\Server\src\genrev\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="F:\DungeonCraft\Build\src\genrev\CMakeFiles\revision.h">
+      <Filter>Header Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{9778FB1B-4D8F-3153-8F42-C75BD471009F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{A0E85AC7-3C0D-3B73-AA54-229AA51ACA71}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

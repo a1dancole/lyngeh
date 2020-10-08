@@ -1,0 +1,2 @@
+F:\DungeonCraft\Build\src\server\shared\Debug\shared.pdb
+F:\DungeonCraft\Build\src\server\shared\shared.dir\Debug\shared.pdb

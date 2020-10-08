@@ -1,0 +1,4 @@
+# CMake generation dependency list for this directory.
+F:/DungeonCraft/Build/src/server/game/game_CXX_cotire.cmake
+F:/DungeonCraft/Server/modules/mod-ah-bot-master/cmake/after_game_lib.cmake
+F:/DungeonCraft/Server/src/server/game/CMakeLists.txt

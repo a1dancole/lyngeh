@@ -1,0 +1,13 @@
+﻿  Building Custom Rule F:/DungeonCraft/Server/deps/zlib/CMakeLists.txt
+  adler32.c
+  compress.c
+  crc32.c
+  deflate.c
+  infback.c
+  inffast.c
+  inflate.c
+  inftrees.c
+  trees.c
+  uncompr.c
+  zutil.c
+  zlib.vcxproj -> F:\DungeonCraft\Build\deps\zlib\Release\zlib.lib

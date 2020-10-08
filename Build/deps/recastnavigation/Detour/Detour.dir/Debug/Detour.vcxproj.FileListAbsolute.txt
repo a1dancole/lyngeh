@@ -1,0 +1,2 @@
+F:\DungeonCraft\Build\deps\recastnavigation\Detour\Debug\Detour.pdb
+F:\DungeonCraft\Build\deps\recastnavigation\Detour\Detour.dir\Debug\Detour.pdb

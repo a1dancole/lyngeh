@@ -1,0 +1,2 @@
+F:\DungeonCraft\Build\deps\gsoap\Debug\gsoap.pdb
+F:\DungeonCraft\Build\deps\gsoap\gsoap.dir\Debug\gsoap.pdb
